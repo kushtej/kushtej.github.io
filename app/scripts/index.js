@@ -1,9 +1,14 @@
 var data = {
-
-    headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of SoftwareDevelopment,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
-    careergoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
+    heading:{
+        headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of SoftwareDevelopment,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
+        careerGoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
+    },
     email:"tejasvi.sridhar@gmail.com",
     location:"Mysore, India",
+    education:{
+        bachelor:"",
+        preUniversity:""
+    },
     testimonials:"",
     
     projects: [
@@ -67,8 +72,8 @@ var data = {
 
 
 let loadStaticContent = () => {
-    $(".headline").html(data.headline)
-    $(".careergoal").html(data.careergoal)
+    $(".headline").html(data.heading.headline)
+    $(".careergoal").html(data.heading.careerGoal)
     $(".location").html(data.location)
     $(".email").html(data.email)
 }
