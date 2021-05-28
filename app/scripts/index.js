@@ -151,7 +151,7 @@ let loadProjects = () => {
             </div>
         </div>
         `
-        $('#projects').append(card)
+        $('.projects').append(card)
     }
 }
 
@@ -191,4 +191,12 @@ $(document).ready(function () {
     $(".gists-no").click(function(){
         loadModal(data.gists[parseInt(this.title)])
     });
+
+    $('.popover-dismiss').popover('show');
+
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    })
+
+    
 });
