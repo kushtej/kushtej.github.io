@@ -49,21 +49,21 @@ var data = {
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
+            media: {type:"3",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
+            media: {type:"d",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },        
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"iframe",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
+            media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },
@@ -87,7 +87,7 @@ let loadModal = (project) => {
         `
         <img src="${project.media.content}" class="card-img-top border-bottom" alt="project-image">
         `
-    } else {
+    } else if(project.media.type == "iframe") {
         mediaTemplate = 
         `
         <div class="embed-responsive embed-responsive-16by9">
@@ -109,9 +109,6 @@ let loadModal = (project) => {
                 </div>
                 <div class="modal-body">
                 ${mediaTemplate}
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
                 <h5 class="pt-3 pb-3 font-weight-bold">Discription :</h5>
                 ${project.discription}
                 </div>
@@ -192,11 +189,4 @@ $(document).ready(function () {
         loadModal(data.gists[parseInt(this.title)])
     });
 
-    $('.popover-dismiss').popover('show');
-
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    })
-
-    
 });
