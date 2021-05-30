@@ -27,7 +27,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = 'django-insecure-(4o^hbgeo2j5@ss(-@-4l1$5j!&z)^!m4pl@e-d0%f=#ppx^wu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -125,15 +125,3 @@ STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-STATIC_URL = '/static/'
- 
-# if DEBUG:
-#     STATIC_ROOT = ''
-#     STATIC_DIR = ''
-
-# STATICFILES_DIRS=[
-#     STATIC_DIR,
-# ]
