@@ -5,11 +5,15 @@ var data = {
     },
     email:"tejasvi.sridhar@gmail.com",
     location:"Mysore, India",
-    education:{
-        bachelor:"",
-        preUniversity:""
+    education: {
+        bachelor:{ name : "Maharaja Institue of Technology Thandavapura" , year : "(2016-2020)" },
+        preUniversity:{ name : "Vittala PU College" , year : "(2014-2016)" },
     },
-    testimonials:"",
+    testimonials:{
+        testemonial:"Highly skilled in developing language Models for automating language processing tasks. worked on sentiment analysis for regional languages.",
+        sourceTitle : "Data Scientist at Rubixe | NLP Research Scholar | Key note Speaker | Corporate Trainer",
+        source : "Hemanth Kumar A (Mentor)"
+    },
     
     projects: [
         {
@@ -76,6 +80,9 @@ let loadStaticContent = () => {
     $(".careergoal").html(data.heading.careerGoal)
     $(".location").html(data.location)
     $(".email").html(data.email)
+    $(".testemonial").append(data.testimonials.testemonial)
+    $(".source").html(data.testimonials.source)
+    $(".sourceTitle").html(data.testimonials.sourceTitle)
 }
 
 
@@ -154,7 +161,6 @@ let loadProjects = () => {
 
 let loadGists = () => {
 
-
     for (const [i,gists] of data.gists.entries()) {
         let gistsCard = 
         `
@@ -178,6 +184,8 @@ let loadGists = () => {
 
 
 $(document).ready(function () {
+    $.confetti.start();
+    setTimeout(function(){ $.confetti.stop();}, 3000);
     loadStaticContent()
     loadProjects()
     loadGists()
