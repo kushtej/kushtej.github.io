@@ -5,6 +5,9 @@
 	<title>My Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="My Resume/Portfolio on Github">
+    <meta name="author" content="Tejasvi Sridhar">
+    <link rel="shortcut icon" href="app/images/favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,6 +18,7 @@
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 		crossorigin="anonymous" />
 
+	<script src="app/scripts/data.js"></script>
 	<script src="app/scripts/index.js"></script>
 
 
@@ -81,17 +85,17 @@
 					<p class="text-justify"><strong>Career Goal : </strong><span class="careergoal"></span></p>
 				</div>
 
-				<div class="bg-light mt-3 p-3">
+				<div class="bg-light mt-3 p-3 it-experience">
 					<h3 class="p-3"><em class="fab fa-buffer mr-3"></em>IT Experience : </h3>
 				</div>
 
 				<div class="bg-light mt-3 p-3">
-					<h3 class="p-3"><em class="fas fa-code-branch mr-2"></em>My Projects :</h3>
-          				<div class="row row-cols-1 row-cols-md-3 projects"></div>
+					<h3 class="p-3"><em class="fas fa-code-branch mr-2"></em>My Recent Projects :</h3>
+          				<div class="row row-cols-1 row-cols-md-3 recent-projects"></div>
 				</div>
 
 				<div class="bg-light mt-3 p-3">
-					<h3 class="p-3"><em class="fas fa-code-branch mr-2"></em>My Projects :</h3>
+					<h3 class="p-3"><em class="fas fa-code-branch mr-2"></em>My Older Projects :</h3>
           				<div class="row row-cols-1 row-cols-md-3 projects"></div>
 				</div>
 			</div>
@@ -131,20 +135,12 @@
 					<div class="card-body">
 						<h5 class="card-title"><em class="fas fa-table mr-2"></em>Kaggle Contributions</h5>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Kannada Lexicons<span class="badge badge-primary badge-pill">checkout<em class="ml-2 fas fa-external-link-alt"></em></span></li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">Kannada Word Frequency<span class="badge badge-primary badge-pill">checkout<em class="ml-2 fas fa-external-link-alt"></em></span></li>
+								<li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Kannada Lexicons<a class="badge badge-primary badge-pill" href="https://www.kaggle.com/kushtej/kannada-lexicon-dataset/">checkout<em class="ml-2 fas fa-external-link-alt"></em></a></li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">Kannada Word Frequency<a class="badge badge-primary badge-pill" href="https://www.kaggle.com/kushtej/kannada-word-frequency/">checkout<em class="ml-2 fas fa-external-link-alt"></em></a></li>
 							</ul>
 					</div>
 				</div>
 
-
-				<!-- <div class="card mt-3">
-					<div class="card-body">
-						<h5 class="card-title">Active Participation</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div> -->
 				<div class="activeParticipation"></div>
 				<div class="awards"></div>
 
@@ -156,7 +152,28 @@
 				<div class="card mt-3">
 					<div class="card-body">
 						<h5 class="card-title"><em class="fas fa-globe-asia mr-2"></em>Languages</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<p class="card-text">
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><b>Kannada</b></div>
+							</div> 
+							<br>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b>English</b></div>
+							</div> 
+							<br>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b>Hindi</b></div>
+							</div> 
+							<br>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b>Telugu</b></div>
+							</div> 
+							<br>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><b>Tamil</b></div>
+							</div> 
+							<br>
+						</p>
 						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Go somewhere</a>
 					</div>
 				</div>

@@ -1,114 +1,3 @@
-var data = {
-    heading:{
-        headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of SoftwareDevelopment,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
-        careerGoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
-    },
-    email:"tejasvi.sridhar@gmail.com",
-    location:"Mysore, India",
-    education: {
-        bachelor:{ name : "Maharaja Institue of Technology Thandavapura" , year : "(2016-2020)" },
-        preUniversity:{ name : "Vittala PU College" , year : "(2014-2016)" },
-    },
-    testimonials:{
-        testemonial:"Highly skilled in developing language Models for automating language processing tasks. worked on sentiment analysis for regional languages.",
-        sourceTitle : "Data Scientist at Rubixe | NLP Research Scholar | Key note Speaker | Corporate Trainer",
-        source : "Hemanth Kumar A (Mentor)"
-    },
-    
-    projects: [
-        {
-            id:"p-01",
-            title: "Language Modeling for Kannada Language",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
-            subtitle: "A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence.",
-            discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
-            link: "https://github.com/kushtej/kan-language-modeling"
-        },
-        {
-            id:"p-02",
-            title: "Inquiry Portal",
-            media: {type:"Img",content:"https://picsum.photos/id/3/200/150"},
-            subtitle: "A Realtime Inquiry portal to chat with clients/Agents in realtime and ask any inquiry related to anything.",
-            discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
-            link: "https://github.com/kushtej/nodejs-inquiry-portal"
-        },
-        {
-            id:"p-03",
-            title: "Kannada Word Suggester",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/kushtej/kn-word-suggest/master/preview/kannada.gif"},
-            discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
-            subtitle: "A word suggester which predicts the complete word of typed incomplete word based on word frequency.",
-            link: "https://github.com/kushtej/kn-word-suggest"
-        },
-        {
-            id:"p-04",
-            title: "ATM Simulation using VUE.JS",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/kushtej/sample-atm-app/master/preview.gif"},
-            discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
-            subtitle: "A MVC Design pattern App using Vue.js and PHP to imitate the simulation of an ATM.",
-            link: "https://github.com/kushtej/sample-atm-app"
-        },
-    ],
-    gists:[
-        {
-            id:"g-01",
-            title: "Subtitle Synchronizer",
-            media: {type:"3",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
-            discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
-            link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
-        },
-        {
-            id:"g-01",
-            title: "Subtitle Synchronizer",
-            media: {type:"d",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
-            discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
-            link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
-        },        
-        {
-            id:"g-01",
-            title: "Subtitle Synchronizer",
-            media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
-            discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
-            link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
-        },
-    ],
-    awards : 
-        {
-            title:"Awards",
-            media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
-            discription:[
-               {
-                  mode:"Technical",
-                  won:[
-                     "Best Technical Paper Presentation award in 3th National Level Technical Competition (Techno Spectrum – 2018) organized by GSSSIETW, Mysuru.",
-                     "Best Technical Paper Presentation award in 9th State Level Technical paper Presentation contest (Panchajanya) organized by EIT, Chamarajanagar.",
-                     "Fourth Place (Enthusiastic Participant) in National Level 24 hour Webathon held in Maharaja Institute of Technology, Mysuru.",
-                     "Participated in many International and National competitions like IET –PATW, NCERCSE and TCS-Tech Bytes."
-                  ]
-               },
-               {
-                  mode:"Non Technical",
-                  won:[
-                     "One of the toppers of SSLC Exams in my School.",
-                     "First Place in Technical Quiz and Debates organized as a part Of our College Fest."
-                  ]
-               }
-            ]
-        },
-    activeParticipation : {
-        title:"Active Participation ",
-        media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
-        discription:
-                [
-                "Main Competition head of CodeJam in COMPUTER SOCIETY OF INDIA REGION-V STUDENT CONVENTION where over 800 students attended from various states including karntatka, Andra Pradesh and Telengana organized by MITT, Mysuru in Feb 2020.",
-                "Main Competition head of Googler in 1st State Level competition (Codesmitten) organized by MITT,Mysuru in 2019.",
-                "Main Anchor of more than 15 events including the 1st Yuvadasara Fest held in MIT and 1st Annual day Celebration of SMJV."
-                ]
-    },
-
-}
-
-
 let loadStaticContent = () => {
     $(".headline").html(data.heading.headline)
     $(".careergoal").html(data.heading.careerGoal)
@@ -117,6 +6,11 @@ let loadStaticContent = () => {
     $(".testemonial").append(data.testimonials.testemonial)
     $(".source").html(data.testimonials.source)
     $(".sourceTitle").html(data.testimonials.sourceTitle)
+    loadProjects()
+    loadGists()
+    loadAwards()
+    loadITExperiance()
+    loadActiveParticipation()
 }
 
 
@@ -136,6 +30,13 @@ let loadModal = (project) => {
             <iframe class="embed-responsive-item" src="${project.media.content}" allowfullscreen></iframe>
         </div>
         `
+    } else if(project.media.type == "progress-bar") {
+        mediaTemplate = 
+        `
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        `
     }
 
     if(typeof(project.discription) === "string") {
@@ -145,7 +46,7 @@ let loadModal = (project) => {
     else if(project.discription[0].won === undefined ) {
         modalDescription +=  `<ol>`
         for(let i of project.discription) {
-            modalDescription += `<li>${i}</li>`
+            modalDescription += `<li class="p-1">${i}</li>`
         }
         modalDescription +=  `</ol>` 
     }
@@ -154,11 +55,10 @@ let loadModal = (project) => {
             modalDescription += `<h6 class="modal-title font-weight-bold">${project.discription[index].mode}</h6>`
             modalDescription +=  `<ol>`
             for(let i of project.discription[index].won) {
-                modalDescription += `<li>${i}</li>`
+                modalDescription += `<li class="p-1">${i}</li>`
             }
             modalDescription +=  `</ol>`
         }
-
     } 
 
     let modalTemplate =
@@ -178,7 +78,7 @@ let loadModal = (project) => {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a type="link" href="${project.link}" class="btn btn-primary"><em
+                    <a type="link" href="${project.link}" class="btn btn-primary project-link"><em
                             class="fas fa-external-link-alt mr-2"></em>Visit!</a>
                 </div>
             </div>
@@ -186,6 +86,9 @@ let loadModal = (project) => {
     </div>
     `
     $('#modal').html(modalTemplate)
+    if(project.link === undefined) {
+        $(".project-link").hide()
+    } 
 }
 
 
@@ -212,7 +115,11 @@ let loadProjects = () => {
             </div>
         </div>
         `
-        $('.projects').append(card)
+        if(i>2){
+            $('.projects').append(card)
+        } else {
+            $('.recent-projects').append(card)
+        }
     }
 }
 
@@ -246,7 +153,7 @@ let loadAwards = () => {
         <div class="card-body">
             <h5 class="card-title"><em class="fas fa-award mr-2"></em>Awards</h5>
             <p class="card-text">All my Technical and Non-Technical Awards</p>
-            <a href="#" class="btn btn-primary awards-button" data-toggle="modal" data-target="#exampleModal" >Go somewhere</a>
+            <a href="#" class="btn btn-primary awards-button" data-toggle="modal" data-target="#exampleModal" >Checkout!</a>
         </div>
     </div>
     `
@@ -259,9 +166,9 @@ let loadActiveParticipation = () => {
     `
     <div class="card mt-3">
         <div class="card-body">
-            <h5 class="card-title">Active Participation</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary activeParticipation-button" data-toggle="modal" data-target="#exampleModal" >Go somewhere</a>
+            <h5 class="card-title"><em class="fas fa-running mr-2"></em>Active Participation</h5>
+            <p class="card-text">All important responsibilies and active participation in various activies as a group or individually! </p>
+            <a href="#" class="btn btn-primary activeParticipation-button" data-toggle="modal" data-target="#exampleModal" >Checkout!</a>
         </div>
     </div>
     `
@@ -269,12 +176,25 @@ let loadActiveParticipation = () => {
 
 }
 
+let loadITExperiance  = () => {
+    for (const [i,IT] of data.IT.entries()) {
+        let template = 
+        `
+        <div class="item">
+            <h5 class="title"> ${IT.designation} - <span class="place"><a href="${IT.companyLink}">${IT.company}</a></span> <span class="year">(Mar 2019 - May 2019)</span></h5>
+            <p class="title"><a href="${IT.companyLink}" target="_blank">${IT.companyLink}</a></p>
+            <p>${IT.discription}</p>
+        </div>
+        <hr/>
+        ` 
+        $('.it-experience').append(template)    
+    }
+
+}
+
 $(document).ready(function () {
     loadStaticContent()
-    loadProjects()
-    loadGists()
-    loadAwards()
-    loadActiveParticipation()
+
     $(".project-no").click(function(){
         loadModal(data.projects[parseInt(this.title)])
     });
