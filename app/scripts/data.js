@@ -45,10 +45,18 @@ var data = {
         {
             id:"p-02",
             title: "Inquiry Portal",
-            media: {type:"Img",content:"https://picsum.photos/id/3/200/150"},
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 50%; padding-top: 120px;"><a href="https://github.com/kushtej/nodejs-inquiry-portal" data-iframely-url="//cdn.iframe.ly/8P04Xy6"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
             subtitle: "A Realtime Inquiry portal to chat with clients/Agents in realtime and ask any inquiry related to anything.",
             discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
             link: "https://github.com/kushtej/nodejs-inquiry-portal"
+        },
+        {
+            id:"p-04",
+            title: "ATM Simulation using VUE.JS",
+            media: {type:"Img",content:"https://raw.githubusercontent.com/kushtej/sample-atm-app/master/preview.gif"},
+            discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
+            subtitle: "A MVC Design pattern App using Vue.js and PHP to imitate the simulation of an ATM.",
+            link: "https://github.com/kushtej/sample-atm-app"
         },
         {
             id:"p-03",
@@ -59,35 +67,90 @@ var data = {
             link: "https://github.com/kushtej/kn-word-suggest"
         },
         {
-            id:"p-04",
-            title: "ATM Simulation using VUE.JS",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/kushtej/sample-atm-app/master/preview.gif"},
-            discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
-            subtitle: "A MVC Design pattern App using Vue.js and PHP to imitate the simulation of an ATM.",
-            link: "https://github.com/kushtej/sample-atm-app"
+            id:"p-05",
+            title: "Assist",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 50%; padding-top: 120px;"><a href="https://github.com/kushtej/Assist" data-iframely-url="//cdn.iframe.ly/HxgQem5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            subtitle: "A handy tool for Developers to stay up todate with the world!",
+            discription:"Assist is an MIT licenced Open Source Python Package built specifically for Linux users to stay in touch with the world. The Terminal Assistant is an Assistant which gives you the current news, Weather forecast of your geographical area,The current bitcoin price and many other information which can be customized to your own preference.",
+            link: "https://github.com/kushtej/Assist"
         },
+        {
+            id:"p-06",
+            title: "SocialBlog",
+            media: {type:"Img",content:`https://raw.githubusercontent.com/kushtej/Socialblog/master/preview/2.Groups.png`},
+            subtitle: "A Social Blog for posting fun blogs or any experience related to travelling and food etc",
+            discription:"A Social Blog for posting fun blogs or any experience related to travelling and food etc., protected with bcrypt hashing where a user can join or create a Group. Administration profile where admin can add the profile pic for the user built on Django framework.",
+            link: "https://github.com/kushtej/Socialblog"
+        },
+        {
+            id:"p-07",
+            title: "Login System",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 50%; padding-top: 120px;"><a href="https://github.com/kushtej/login-system" data-iframely-url="//cdn.iframe.ly/hUk85FM"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            subtitle: "The Perfect Login System with email verification, Password reset with zero vulnerabilities",
+            discription:"The Perfect Login System with email verification, Password reset with zero vulnerabilities that can be used as an extention to my future Django Projects. To use it Just paste the accounts app in the directory and add the accounts in <code>INSTALLED_APPS</code> in the settings.py like this and you are good to go. :)",
+            link: "https://github.com/kushtej/Sentiment-Analysis"
+        },
+        {
+            id:"p-08",
+            title: "Sentiment Analysis",
+            media: {type:"Img",content:`https://raw.githubusercontent.com/kushtej/Socialblog/master/preview/2.Groups.png`},
+            subtitle: "Sentiment Analysis based on Both Lexicon Based approach and ML based Approach",
+            discription:"A tool to extract the Real time opinions of people on social media platform Twitter about various trending topics built using both Machine Learning and Lexicon approach using Naïve Bayes Algorithm and TextBlob module using the concepts of Natural Language Processing.",
+            link: "https://github.com/kushtej/Sentiment-Analysis"
+        },
+
+        {
+            id:"p-09",
+            title: "Blockchain Ethereum Bucket List",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 50%; padding-top: 120px;"><a href="https://github.com/kushtej/Bucket-List" data-iframely-url="//cdn.iframe.ly/OypAzbq"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            subtitle: "An Etherium powered Smart Contract for bucket list",
+            discription:"A Blockchain powered Bucket List using Ethereum smart contract where a user can create, check and uncheck his task built using truffle framework, Solidity programming language, Ganache with metamask and Nodejs for hosting the decentralized application.",
+            link: "https://github.com/kushtej/Bucket-List"
+        },
+        {
+            id:"p-10",
+            title: "My Miscellaneous Projects",
+            media: {
+                type:"iframe",
+                content:`<div class="embed-responsive embed-responsive-1by1">
+                            <iframe class="embed-responsive-item" src="https://kushtej.github.io/my-miscellaneous-projects"></iframe>
+                        </div>`
+                    },
+            subtitle: "Small Projects on ES6, PHP, NodeJs and React which I do to pass my time or when I am learning something new...",
+            discription:"Small Projects on ES6, PHP, NodeJs and React which I do to pass my time or when I am learning something new...",
+            link: "https://github.com/kushtej/my-miscellaneous-projects"
+        },
+        {
+            id:"p-11",
+            title: "All My other Projects",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/kushtej" data-iframely-url="//cdn.iframe.ly/Yc5Y6rO"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            subtitle: "All Other github projects like <b>GoLang Web App</b>, Twitter Clone...",
+            discription: "All Other github projects like <b>GoLang Web App</b>, Twitter Clone...",
+            link: "https://github.com/kushtej/"
+        },
+
     ],
     gists:[
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"3",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%;"><a href="https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca" data-iframely-url="//cdn.iframe.ly/GL76AWZ"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },
         {
             id:"g-01",
-            title: "Subtitle Synchronizer",
-            media: {type:"d",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
-            discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
-            link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
+            title: "C/C++/JAVA Automator",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%;"><a href="https://gist.github.com/kushtej/28812052944cc3ea76d9f6da81c0a72e" data-iframely-url="//cdn.iframe.ly/1liV0PK"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            discription: "This is a simple yet highly useful bash script to automate 2 steps of C/C++ or JAVA i.e., compilation and execution of of C/C++ and JAVA file.",
+            link: "https://gist.github.com/kushtej/28812052944cc3ea76d9f6da81c0a72e"
         },        
         {
             id:"g-01",
-            title: "Subtitle Synchronizer",
-            media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
-            discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
-            link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
+            title: "Internet Checker",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%;"><a href="https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43" data-iframely-url="//cdn.iframe.ly/LKJuDPt"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            discription: "A simple bash scirpt to check Internet connection in your machine.",
+            link: "https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43"
         },
     ],
     awards : 

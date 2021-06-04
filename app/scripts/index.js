@@ -18,18 +18,12 @@ let loadModal = (project) => {
     var mediaTemplate = ``
     var modalDescription = ``
     if(project.media.type == "Img") {
-        console.log(project.media)
         mediaTemplate = 
         `
         <img src="${project.media.content}" class="card-img-top border-bottom" alt="project-image">
         `
     } else if(project.media.type == "iframe") {
-        mediaTemplate = 
-        `
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="${project.media.content}" allowfullscreen></iframe>
-        </div>
-        `
+        mediaTemplate = project.media.content
     } else if(project.media.type == "progress-bar") {
         mediaTemplate = 
         `
@@ -75,7 +69,6 @@ let loadModal = (project) => {
                 <div class="modal-body">
                 ${mediaTemplate}
                 ${modalDescription}
-                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <a type="link" href="${project.link}" class="btn btn-primary project-link"><em
@@ -100,6 +93,8 @@ let loadProjects = () => {
             `
             <img src="${project.media.content}" class="card-img-top border-bottom" alt="project-image">
             `
+        } else if(project.media.type == "iframe") {
+            mediaTemplate = project.media.content
         }
         let card =
         `
@@ -196,6 +191,7 @@ $(document).ready(function () {
     loadStaticContent()
 
     $(".project-no").click(function(){
+        console.log(this)
         loadModal(data.projects[parseInt(this.title)])
     });
 
