@@ -5,11 +5,15 @@ var data = {
     },
     email:"tejasvi.sridhar@gmail.com",
     location:"Mysore, India",
-    education:{
-        bachelor:"",
-        preUniversity:""
+    education: {
+        bachelor:{ name : "Maharaja Institue of Technology Thandavapura" , year : "(2016-2020)" },
+        preUniversity:{ name : "Vittala PU College" , year : "(2014-2016)" },
     },
-    testimonials:"",
+    testimonials:{
+        testemonial:"Highly skilled in developing language Models for automating language processing tasks. worked on sentiment analysis for regional languages.",
+        sourceTitle : "Data Scientist at Rubixe | NLP Research Scholar | Key note Speaker | Corporate Trainer",
+        source : "Hemanth Kumar A (Mentor)"
+    },
     
     projects: [
         {
@@ -49,25 +53,59 @@ var data = {
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
+            media: {type:"3",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"Img",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
+            media: {type:"d",content:"https://raw.githubusercontent.com/prashanthsp6498/wordmodeling/v0.0.1/preview/project_main.gif"},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },        
         {
             id:"g-01",
             title: "Subtitle Synchronizer",
-            media: {type:"iframe",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
+            media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
             discription: "A simple python tool to synchronize subtitles with audio/video in a movie.",
             link: "https://gist.github.com/kushtej/80215d7ddbf656803855a547b06ce2ca"
         },
     ],
+    awards : 
+        {
+            title:"Awards",
+            media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
+            discription:[
+               {
+                  mode:"Technical",
+                  won:[
+                     "Best Technical Paper Presentation award in 3th National Level Technical Competition (Techno Spectrum – 2018) organized by GSSSIETW, Mysuru.",
+                     "Best Technical Paper Presentation award in 9th State Level Technical paper Presentation contest (Panchajanya) organized by EIT, Chamarajanagar.",
+                     "Fourth Place (Enthusiastic Participant) in National Level 24 hour Webathon held in Maharaja Institute of Technology, Mysuru.",
+                     "Participated in many International and National competitions like IET –PATW, NCERCSE and TCS-Tech Bytes."
+                  ]
+               },
+               {
+                  mode:"Non Technical",
+                  won:[
+                     "One of the toppers of SSLC Exams in my School.",
+                     "First Place in Technical Quiz and Debates organized as a part Of our College Fest."
+                  ]
+               }
+            ]
+        },
+    activeParticipation : {
+        title:"Active Participation ",
+        media: {type:"a",content:'https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43'},
+        discription:
+                [
+                "Main Competition head of CodeJam in COMPUTER SOCIETY OF INDIA REGION-V STUDENT CONVENTION where over 800 students attended from various states including karntatka, Andra Pradesh and Telengana organized by MITT, Mysuru in Feb 2020.",
+                "Main Competition head of Googler in 1st State Level competition (Codesmitten) organized by MITT,Mysuru in 2019.",
+                "Main Anchor of more than 15 events including the 1st Yuvadasara Fest held in MIT and 1st Annual day Celebration of SMJV."
+                ]
+    },
+
 }
 
 
@@ -76,18 +114,22 @@ let loadStaticContent = () => {
     $(".careergoal").html(data.heading.careerGoal)
     $(".location").html(data.location)
     $(".email").html(data.email)
+    $(".testemonial").append(data.testimonials.testemonial)
+    $(".source").html(data.testimonials.source)
+    $(".sourceTitle").html(data.testimonials.sourceTitle)
 }
 
 
 let loadModal = (project) => {
     var mediaTemplate = ``
+    var modalDescription = ``
     if(project.media.type == "Img") {
         console.log(project.media)
         mediaTemplate = 
         `
         <img src="${project.media.content}" class="card-img-top border-bottom" alt="project-image">
         `
-    } else {
+    } else if(project.media.type == "iframe") {
         mediaTemplate = 
         `
         <div class="embed-responsive embed-responsive-16by9">
@@ -95,6 +137,29 @@ let loadModal = (project) => {
         </div>
         `
     }
+
+    if(typeof(project.discription) === "string") {
+        modalDescription = `<h5 class="pt-3 pb-3 font-weight-bold">Discription :</h5>`
+        modalDescription += project.discription
+    } 
+    else if(project.discription[0].won === undefined ) {
+        modalDescription +=  `<ol>`
+        for(let i of project.discription) {
+            modalDescription += `<li>${i}</li>`
+        }
+        modalDescription +=  `</ol>` 
+    }
+    else if(typeof(project.discription) === "object") {
+        for (let [index,awardMode] of project.discription.entries()) {
+            modalDescription += `<h6 class="modal-title font-weight-bold">${project.discription[index].mode}</h6>`
+            modalDescription +=  `<ol>`
+            for(let i of project.discription[index].won) {
+                modalDescription += `<li>${i}</li>`
+            }
+            modalDescription +=  `</ol>`
+        }
+
+    } 
 
     let modalTemplate =
     `
@@ -109,11 +174,7 @@ let loadModal = (project) => {
                 </div>
                 <div class="modal-body">
                 ${mediaTemplate}
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-                <h5 class="pt-3 pb-3 font-weight-bold">Discription :</h5>
-                ${project.discription}
+                ${modalDescription}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -157,7 +218,6 @@ let loadProjects = () => {
 
 let loadGists = () => {
 
-
     for (const [i,gists] of data.gists.entries()) {
         let gistsCard = 
         `
@@ -179,11 +239,42 @@ let loadGists = () => {
     }
 }
 
+let loadAwards = () => {
+    let template = 
+    `
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title"><em class="fas fa-award mr-2"></em>Awards</h5>
+            <p class="card-text">All my Technical and Non-Technical Awards</p>
+            <a href="#" class="btn btn-primary awards-button" data-toggle="modal" data-target="#exampleModal" >Go somewhere</a>
+        </div>
+    </div>
+    `
+    $('.awards').append(template)
+
+}
+
+let loadActiveParticipation = () => {
+    let template = 
+    `
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Active Participation</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary activeParticipation-button" data-toggle="modal" data-target="#exampleModal" >Go somewhere</a>
+        </div>
+    </div>
+    `
+    $('.activeParticipation').append(template)
+
+}
 
 $(document).ready(function () {
     loadStaticContent()
     loadProjects()
     loadGists()
+    loadAwards()
+    loadActiveParticipation()
     $(".project-no").click(function(){
         loadModal(data.projects[parseInt(this.title)])
     });
@@ -192,11 +283,11 @@ $(document).ready(function () {
         loadModal(data.gists[parseInt(this.title)])
     });
 
-    $('.popover-dismiss').popover('show');
+    $(".awards-button").click(function(){
+        loadModal(data.awards)
+    });
 
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    })
-
-    
+    $(".activeParticipation-button").click(function(){
+        loadModal(data.activeParticipation)
+    });
 });

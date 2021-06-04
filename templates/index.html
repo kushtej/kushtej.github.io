@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,19 +6,18 @@
 	<title>My Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="data:;base64,=">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 		crossorigin="anonymous" />
-	<link rel="shortcut icon" href="https://static.djangoproject.com/img/favicon.6dbf28c0650e.ico">
 
-  <script src="static/scripts/index.js"></script>
+	<script src="app/scripts/index.js"></script>
+
 
 </head>
 
@@ -111,11 +111,8 @@
 					<div class="card-header">Testimonials</div>
 					<div class="card-body">
 						<blockquote class="blockquote mb-0">
-							<p><em class="fas fa-quote-left mr-2"></em>Highly skilled in developing language Models for
-								automating
-								language processing tasks. worked on sentiment analysis for regional languages.</p>
-							<footer class="blockquote-footer">Hemanth Kumar A (Mentor)<cite title="Source Title">Source
-									Title</cite>
+							<p class="testemonial"><em class="fas fa-quote-left mr-2"></em></p>
+							<footer class="blockquote-footer"><span class="source"></span><br><cite title="Source Title" class="sourceTitle">SourceTitle</cite>
 							</footer>
 						</blockquote>
 					</div>
@@ -124,52 +121,44 @@
 				<div class="card mt-3">
 					<div class="card-body">
 						<h5 class="card-title"><em class="fas fa-graduation-cap mr-2"></em>Education</h5>
-						<!-- <p class="card-text"> -->
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item"><h5 class="">Bachelor's Degree</h5><small><strong>Maharaja Institue of Technology Thandavapura </strong>(2016-2020)</small></li>
 								<li class="list-group-item"><h5 class=""> Pre-University Education</h5><small><strong>Vittala PU College </strong></small>(2014-2016)</li>
 							</ul>
-						<!-- </p> -->
 					</div>
 				</div>
 
 				<div class="card mt-3">
 					<div class="card-body">
 						<h5 class="card-title"><em class="fas fa-table mr-2"></em>Kaggle Contributions</h5>
-						<!-- <p class="card-text"> -->
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Kannada Lexicons<span class="badge badge-primary badge-pill">checkout<em class="ml-2 fas fa-external-link-alt"></em></span></li>
 								<li class="list-group-item d-flex justify-content-between align-items-center">Kannada Word Frequency<span class="badge badge-primary badge-pill">checkout<em class="ml-2 fas fa-external-link-alt"></em></span></li>
 							</ul>
-							<a tabindex="0" class="btn btn-lg btn-danger popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
-
-						<!-- </p> -->
 					</div>
 				</div>
-				<div class="card mt-3">
+
+
+				<!-- <div class="card mt-3">
 					<div class="card-body">
 						<h5 class="card-title">Active Participation</h5>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 						<a href="#" class="btn btn-primary">Go somewhere</a>
 					</div>
-				</div>
+				</div> -->
+				<div class="activeParticipation"></div>
+				<div class="awards"></div>
 
-				<div class="card mt-3">
-					<div class="card-body">
-						<h5 class="card-title"><em class="fas fa-award mr-2"></em>Awards</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
 				<div class="card mt-3">
 					<div class="card-header"><em class="fas fa-terminal mr-2"></em>My Gists</div>
 					<div class="card-body gists"></div>
 				</div>
+
 				<div class="card mt-3">
 					<div class="card-body">
 						<h5 class="card-title"><em class="fas fa-globe-asia mr-2"></em>Languages</h5>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Go somewhere</a>
 					</div>
 				</div>
 
@@ -180,5 +169,9 @@
 <div id="modal"></div>
 
 </body>
+<!-- <script src="https://rawgit.com/benevolenttech/jquery.confetti.js/master/jquery.confetti.js"></script> -->
+
+	<script src="app/scripts/confetti.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script> -->
 
 </html>
