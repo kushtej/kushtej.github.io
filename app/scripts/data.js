@@ -3,6 +3,12 @@ var data = {
         headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of SoftwareDevelopment,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
         careerGoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
     },
+    socialMedia : {
+                    github:"https://github.com/kushtej",
+                    linkedin:"https://www.linkedin.com/in/tejasvi-sridhar/",
+                    hackerrank:"https://hackerrank.com/kushtej/",
+                    kaggle:"https://www.kaggle.com/kushtej/",
+                },
     email:"tejasvi.sridhar@gmail.com",
     location:"Mysore, India",
     IT : [
