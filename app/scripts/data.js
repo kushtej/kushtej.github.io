@@ -159,6 +159,24 @@ var data = {
             link: "https://gist.github.com/kushtej/b257196104e395e8d9c4050d1d901c43"
         },
     ],
+
+    kaggleContributions : [
+        {
+            id:"k-01",
+            title: "Kannada Lexicons Dataset",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://kaggle.com/kushtej/kannada-lexicon-dataset" data-iframely-url="//cdn.iframe.ly/faovHhy"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            discription: "A Kannada (kn) lexicon dataset of more than 8k words consisting of positive, neutral and negative lexicons with polarity of +1, 0 and -1 built for the purpose of Sentiment analysis verified by kannada annotators.",
+            link: "https://www.kaggle.com/kushtej/kannada-lexicon-dataset"
+        },
+
+        {
+            id:"k-02",
+            title: "Kannada Word Frequency Dataset",
+            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://kaggle.com/kushtej/kannada-word-frequency" data-iframely-url="//cdn.iframe.ly/if8zHNB"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            discription: "The Kannada (kn) word frequency dataset of more than 35k words grouped by frequency of occurrence from highest to lowest i.e., word count on the basis of highest used words to lowest used words.",
+            link: "https://www.kaggle.com/kushtej/kannada-word-frequency"
+        },
+    ],
     awards : 
         {
             title:"Awards",
