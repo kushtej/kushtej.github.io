@@ -205,6 +205,7 @@ var data = {
         media: {type:"a",content:''},
         discription:
                 [
+                "Worked as lead Developer in building an entire new MIT -Thandavapura professional website from ground-up and coordinated the rest of the team as an MITT IT-Team member, Main maintenance coordinator of the website and monitor the website on a daily basis. <a href='http://www.mitt.edu.in/it.html'>http://www.mitt.edu.in/</a>",
                 "Main Competition head of CodeJam in COMPUTER SOCIETY OF INDIA REGION-V STUDENT CONVENTION where over 800 students attended from various states including karntatka, Andra Pradesh and Telengana organized by MITT, Mysuru in Feb 2020.",
                 "Main Competition head of Googler in 1st State Level competition (Codesmitten) organized by MITT,Mysuru in 2019.",
                 "Main Anchor of more than 15 events including the 1st Yuvadasara Fest held in MIT and 1st Annual day Celebration of SMJV."
