@@ -176,7 +176,7 @@ let loadITExperiance  = () => {
         let template = 
         `
         <div class="item">
-            <h5 class="title"> ${IT.designation} - <span class="place"><a href="${IT.companyLink}">${IT.company}</a></span> <span class="year">(Mar 2019 - May 2019)</span></h5>
+            <h5 class="title"> ${IT.designation} - <span class="place"><a href="${IT.companyLink}">${IT.company}</a></span> <span class="year">(${IT.year})</span></h5>
             <p class="title"><a href="${IT.companyLink}" target="_blank">${IT.companyLink}</a></p>
             <p>${IT.discription}</p>
         </div>
