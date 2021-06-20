@@ -51,7 +51,7 @@ var data = {
         {
             id:"p-02",
             title: "Inquiry Portal",
-            media: {type:"iframe",content:`<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 50%; padding-top: 120px;"><a href="https://github.com/kushtej/nodejs-inquiry-portal" data-iframely-url="//cdn.iframe.ly/8P04Xy6"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>`},
+            media: {type:"Img",content:"https://github.com/kushtej/nodejs-inquiry-portal/blob/635612e6a051e42c6318306731596419c0eba828/preview/preivew.gif"},
             subtitle: "A Realtime Inquiry portal to chat with clients/Agents in realtime and ask any inquiry related to anything.",
             discription:"A LSTM (RNN) based Deep learning model trained for kannada language to suggest the next words in a sentence for the given text powered by flask framework. The project is built as a platform where a user can signup/login by email verification, create a new file in the editor,save etc.",
             link: "https://github.com/kushtej/nodejs-inquiry-portal"
