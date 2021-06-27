@@ -23,7 +23,7 @@ let loadModal = (project) => {
         <img src="${project.media.content}" class="card-img-top border-bottom" alt="project-image">
         `
     } else if(project.media.type == "iframe") {
-        mediaTemplate = project.media.content
+        mediaTemplate = `<div class="modal-iframe-container">${project.media.content}</div>`
     } else if(project.media.type == "progress-bar") {
         mediaTemplate = 
         `

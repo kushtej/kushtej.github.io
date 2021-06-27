@@ -1,9 +1,4 @@
-/* iframe {
-    transform: scale(1,1);
-}
-   */
-
-.iframely-embed{
+.modal-iframe-container{
     height:300px; 
     overflow:hidden; 
     overflow-y:auto;
