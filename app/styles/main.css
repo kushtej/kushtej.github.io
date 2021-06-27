@@ -2,3 +2,9 @@
     transform: scale(1,1);
 }
    */
+
+.iframely-embed{
+    height:300px; 
+    overflow:hidden; 
+    overflow-y:auto;
+}
