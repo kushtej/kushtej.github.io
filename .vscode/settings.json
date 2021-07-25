@@ -1,0 +1,31 @@
+{
+    "deploy.reloaded": {
+        "language": "en",
+        "packages": [
+            {
+                "name": "kushtej.github.io",
+                "files": [
+                    "/**",
+                    "*"
+                ],
+                "deployOnChange": true,
+                "fastCheckOnChange": true,
+                "deployOnSave": true,
+                "fastCheckOnSave": true,
+                "removeOnChange": true,
+                "targets": [
+                    "Apache local"
+                ]
+            }
+        ],
+        "targets": [
+            {
+                "type": "local",
+                "name": "Apache local",
+                "dir": "/var/www/html/kushtej.github.io",
+            }
+        ],
+        "showStatusWhenFinished": true,
+        "timeToWaitBeforeActivateDeployOnChange": 5000
+    },
+}

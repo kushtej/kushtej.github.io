@@ -1,6 +1,6 @@
 var data = {
     heading:{
-        headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of SoftwareDevelopment,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
+        headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of Software Development,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
         careerGoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
     },
     socialMedia : {
@@ -209,6 +209,15 @@ var data = {
                 "Main Competition head of CodeJam in COMPUTER SOCIETY OF INDIA REGION-V STUDENT CONVENTION where over 800 students attended from various states including karntatka, Andra Pradesh and Telengana organized by MITT, Mysuru in Feb 2020.",
                 "Main Competition head of Googler in 1st State Level competition (Codesmitten) organized by MITT,Mysuru in 2019.",
                 "Main Anchor of more than 15 events including the 1st Yuvadasara Fest held in MIT and 1st Annual day Celebration of SMJV."
+                ]
+    },
+
+    thankYou : {
+        title:"Thank you!😄",
+        media: {type:"a",content:''},
+        discription:
+                [
+                    `<b>Wow!!</b> You Checked out my website for more 1 minute!!<br><br>Thank you soo much!🤩<br/>`
                 ]
     },
 

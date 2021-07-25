@@ -134,7 +134,6 @@ let loadGists = () => {
         </div>
         `
         if( (i===0) || (i%2===0) ) {
-            console.log(i)
             $(".gists").append('<div class="row gistrow"></div>');
         }
         $(".gistrow:nth-last-child(1)").append(gistsCard);
@@ -153,7 +152,6 @@ let loadAwards = () => {
     </div>
     `
     $('.awards').append(template)
-
 }
 
 let loadActiveParticipation = () => {
@@ -187,11 +185,25 @@ let loadITExperiance  = () => {
 
 }
 
+let loadConfetti = () => {
+
+    setTimeout(function(){
+        $.confetti.start();
+        $(document).ready(function () {
+            loadModal(data.thankYou);
+            $("#exampleModal").modal('show');
+        });
+        setTimeout(function(){
+            $.confetti.stop();
+        }, 6000);
+    }, 30000);
+}
+
 $(document).ready(function () {
     loadStaticContent()
+    loadConfetti()
 
     $(".project-no").click(function(){
-        console.log(this)
         loadModal(data.projects[parseInt(this.title)])
     });
 

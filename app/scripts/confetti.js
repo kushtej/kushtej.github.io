@@ -174,13 +174,15 @@
   
       function StartConfetti() {
           W = window.innerWidth;
-          H = window.innerHeight;
-          canvas.width = W;
-          canvas.height = H;
-          (function animloop() {
-              if (animationComplete) return null;
-              animationHandler = requestAnimFrame(animloop);
-              return Draw();
+        //   H = window.innerHeight;
+         H=$(document). height()
+        
+        canvas.width = W;
+        canvas.height = H;
+        (function animloop() {
+            if (animationComplete) return null;
+            animationHandler = requestAnimFrame(animloop);
+            return Draw();
           })();
       }
   
