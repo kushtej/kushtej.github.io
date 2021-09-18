@@ -1,6 +1,6 @@
 var data = {
     heading:{
-        headline:"Fresher with Bachelor'sdegree focused on Computer Science.Actively looking for opportunities in the field of Software Development,Researchin Natural Language processing (NLP) and Blockchain.Also have good knowledge in developing webapplications.",
+        headline:"Fresher with Bachelor's degree focused on Computer Science. Actively looking for opportunities in the field of Software Development, Researchin Natural Language processing (NLP) and Blockchain. Also have good knowledge in developing webapplications.",
         careerGoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
     },
     socialMedia : {
@@ -220,5 +220,20 @@ var data = {
                     `<b>Wow!!</b> You Checked out my website for more 1 minute!!<br><br>Thank you soo much!🤩<br/>`
                 ]
     },
+
+    toasts : 
+        {
+            portfolioTemplateInfo : 
+            {
+                heading : "🎉 Fact",
+                bodyContent : 
+                `
+                    Did you know that this portfolio is entirely built on JS.
+                    All you have to do is replace your content and the template is yours!🥳            
+                `,
+                delay : 10000,
+                stayTime : 10000
+            },
+        }
 
 }

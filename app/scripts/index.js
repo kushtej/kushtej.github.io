@@ -11,6 +11,7 @@ let loadStaticContent = () => {
     loadAwards()
     loadITExperiance()
     loadActiveParticipation()
+    loadToast(data.toasts.portfolioTemplateInfo);
 }
 
 
@@ -198,6 +199,30 @@ let loadConfetti = () => {
         }, 6000);
     }, 30000);
 }
+
+
+let loadToast  = (toastValues) => {
+    let template = 
+    `
+    <div aria-live="polite" aria-atomic="true">
+        <div class="toast" style="position: absolute; top: 2%; right: 2%;" data-delay="${toastValues.stayTime.toString()}" >
+            <div class="toast-header">
+                <strong class="mr-auto">${toastValues.heading}</strong>
+                <small>Now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">${toastValues.bodyContent}</div>
+        </div>
+    </div>
+    `
+    setTimeout(function(){
+        $('.showToast').html(template)
+        $('.toast').toast("show")
+    }, toastValues.delay);
+}
+
 
 $(document).ready(function () {
     loadStaticContent()
