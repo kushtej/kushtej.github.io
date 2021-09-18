@@ -12,13 +12,19 @@ var data = {
     email:"tejasvi.sridhar@gmail.com",
     location:"Mysore, India",
     IT : [
+         {
+            company:"Vtiger CRM",
+            designation:"Software Developer",
+            companyLink:"https://www.vtiger.com/",
+            year:"Feb 2021 - Present",
+            discription : "Presently working in Vtiger as a Developer specialized on backend. Worked in developing APIs and other microservices like NodJS, SpringBoot and Django. Have experience in Vtiger CRM opensource Software and have exorbitant capabilites in managing diverse stakeholders in turning project to exponential growth."
+        },
         {
             company:"CIIL",
             designation:"Natural Language Processing Engineer,Intern",
             companyLink:"https://www.ciil.org/",
             year:"Jul 2019 - Aug 2019",
             discription : "Worked in CIIL <b>(Central Institute of Indian Languages)</b> on creating part of speech tagging for Malayalam language by training the corpus using RDR Rule based Tagger. Part of the team worked on building a web interface for POS tagging for non- profit commercial use."
-
         },
         {
             company:"Ercess Live",
