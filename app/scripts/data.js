@@ -238,7 +238,7 @@ var data = {
                     All you have to do is replace your content and the template is yours!🥳            
                 `,
                 delay : 10000,
-                stayTime : 10000
+                stayTime : 100000
             },
         }
 
