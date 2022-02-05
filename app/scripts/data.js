@@ -1,6 +1,6 @@
 var data = {
     heading:{
-        headline:"Fresher with Bachelor's degree focused on Computer Science. Actively looking for opportunities in the field of Software Development, Researchin Natural Language processing (NLP) and Blockchain. Also have good knowledge in developing webapplications.",
+        headline:"Experienced developer with a Bachelor's degree focused on Computer Science. Specialized in implementing microservices and other enhancements for CRM based on any business requirements. Actively looking for opportunities in the field of Software Development, Natural Language Processing (NLP) and blockchain.",
         careerGoal:"To be part of a growth oriented and innovative organization where my capacity to fathom would comprehendand enable business to think beyond the“Norm” resulting inimprovements across the work area.",
     },
     socialMedia : {
@@ -17,7 +17,7 @@ var data = {
             designation:"Software Developer",
             companyLink:"https://www.vtiger.com/",
             year:"Feb 2021 - Present",
-            discription : "Presently working in Vtiger as a Developer specialized on backend. Worked in developing APIs and other microservices like NodJS, SpringBoot and Django. Have experience in Vtiger CRM opensource Software and have exorbitant capabilites in managing diverse stakeholders in turning project to exponential growth."
+            discription : "Presently working on building APIs and creating Microservices for the CRM. Have worked on creating deep learning and machine learning models for a complex opinion mining service and chatbot service, building robust traffic handling applications using NodeJS and Vue. Specialized in implementing enhancements for a CRM based on any business' requirements"
         },
         {
             company:"CIIL",
